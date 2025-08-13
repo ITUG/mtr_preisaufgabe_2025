@@ -1,18 +1,17 @@
 # Michael Trauth Gedächnispreis 2026
 
-## Aufgabe 
-
 In einem digitalen Editionsvorhaben befinden sich die Positionsangaben `lb` (line begin), `pb` (page begin) oder `cb` (code begin) teilweise *ausserhalb* der übergeordneten Einheit (`ab`, `p`). 
 Zudem sind Leerzeilen (`<vg:whiteline/>`) ausserhalb der dadurch freigestellten Textblöcke positioniert.
 
 
-Im folgenden Beispiel befinden sich die Zeilen 4-9 *innerhalb* (`ab`), Zeile 1, 2, 3, 10, 15, 27 und 28 und drei Leerzeilen jedoch *ausserhalb* des Textblocks. 
+Im folgenden Beispiel befinden sich die meisten Zeilen- und Seitenanfänge *innerhalb* des Textblocks (`ab`), ausserhalb - *vorangestellt* – befinden sich jedoch die Zeilen 1, 2, 3, 10, 15, 27 und 28 sowie - *nachgestellt* – drei Leerzeilen. 
 
-1. Verschiebe die freistehende Positionsangaben (Zeilen 1,2 und 3) *in* die dazugehörigen nachstehenden Textblöcke zu verschieben.
+## Aufgabe 
+1. Verschiebe die freistehende Positionsangaben (Zeilen 1,2,3,10,15,27,28) *in* die dazugehörigen nachstehenden Textblöcke.
 2. Verschiebe die nachgestellten Leerzeilen *in* die dazugehörigen vorstehenden Textblöcke.
-3. Überprüfe die vorgenommenen Änderungen (Dokumentation, Beleg vorher/nachher, etc.)
+3. Dokumentiere die vorgenommenen Änderungen (vorher/nachher).
 
-Textgrundlage sind die unter Creative Commons Attribution, NonCommercial,   ShareAlike 4.0 International (CC BY-NC-SA 4.0) Lizenz bereitgestellten van Gogh Letters. 
+Textgrundlage sind die unter Creative Commons Attribution, NonCommercial, ShareAlike 4.0 International (CC BY-NC-SA 4.0) Lizenz bereitgestellten van Gogh Letters. 
 
 Gearbeitet werden kann mit dem untenstehenden Textbeispiel oder einem oder mehreren oder allen Texten, die im van Gogh Repositiorum bereitgestellt werden: https://github.com/eeditiones/vangogh/tree/master/data
 

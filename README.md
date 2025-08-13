@@ -12,6 +12,11 @@ Im folgenden Beispiel befinden sich die Zeilen 4-9 *innerhalb* (`ab`), Zeile 1, 
 2. Verschiebe die nachgestellten Leerzeilen *in* die dazugehörigen vorstehenden Textblöcke.
 3. Überprüfe die vorgenommenen Änderungen (Dokumentation, Beleg vorher/nachher, etc.)
 
+Textgrundlage sind die unter Creative Commons Attribution, NonCommercial,   ShareAlike 4.0 International (CC BY-NC-SA 4.0) Lizenz bereitgestellten van Gogh Letters. 
+
+> Gearbeitet werden kann mit dem untenstehenden Textbeispiel oder einem oder mehreren oder allen Texten, die im van Gogh Repositiorum bereitgestellt werden: [https://github.com/eeditiones/vangogh/tree/master/data(]https://github.com/eeditiones/vangogh/tree/master/data) 
+
+
 ```xml
 <div type="original" xml:lang="nl">
 <pb f="1r" n="1" xml:id="pb-orig-1r-1" facs="#zone-pb-1r-1"/>
@@ -39,6 +44,7 @@ Im folgenden Beispiel befinden sich die Zeilen 4-9 *innerhalb* (`ab`), Zeile 1, 
 <lb n="28" xml:id="l-28"/>
 <ab>Vincent</ab>
 <vg:whiteline/>
+</div>
 ```
 Quelle: https://github.com/eeditiones/vangogh/blob/master/data/let001.xml, Zeile 76-101
 

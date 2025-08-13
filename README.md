@@ -6,11 +6,11 @@ In einem digitalen Editionsvorhaben befinden sich die Positionsangaben `lb` (lin
 Zudem sind Leerzeilen (`<vg:whiteline/>`) ausserhalb der dadurch freigestellten Textblöcke positioniert.
 
 
-Im folgenden Beispiel befinden sich die Zeilen 4-9 *innerhalb* des Textblocks (`ab`), Zeile 1, 2 und 3 jedoch *ausserhalb*. 
+Im folgenden Beispiel befinden sich die Zeilen 4-9 *innerhalb* (`ab`), Zeile 1, 2, 3, 10, 15, 27 und 28 und drei Leerzeilen jedoch *ausserhalb* des Textblocks. 
 
 1. Verschiebe die freistehende Positionsangaben (Zeilen 1,2 und 3) *in* die dazugehörigen nachstehenden Textblöcke zu verschieben.
 2. Verschiebe die nachgestellten Leerzeilen *in* die dazugehörigen vorstehenden Textblöcke.
-3. Belege die vorgenommen Änderungen
+3. Überprüfe die vorgenommenen Änderungen (Dokumentation, Beleg vorher/nachher, etc.)
 
 ```xml
 <div type="original" xml:lang="nl">

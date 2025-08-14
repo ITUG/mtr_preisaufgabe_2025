@@ -1,14 +1,14 @@
 # Michael Trauth Gedächnispreis 2025
 
-In einem digitalen Editionsvorhaben befinden sich die Positionsangaben `lb` (line begin), `pb` (page begin) oder `cb` (colum begin) teilweise *ausserhalb* der übergeordneten Blockeinheit (`ab`, `p`). 
-Zudem sind Leerzeilen (`<vg:whiteline/>`) ausserhalb der dadurch freigestellten Textblöcke positioniert.
+In einem digitalen Editionsvorhaben befinden sich die Positionsangaben `lb` (line begin) und `pb` (page begin) teilweise *ausserhalb* der übergeordneten Blockeinheit (`ab`). 
+Zudem sind Leerzeilen (`<vg:whiteline/>`) *ausserhalb* der dadurch nach unten abgesetzten Textblöcke positioniert.
 
 Im folgenden Beispiel befinden sich die meisten Zeilen- und Seitenanfänge *innerhalb* des Textblocks (`ab`), ausserhalb - *vorangestellt* – befinden sich jedoch die Zeilen 1, 2, 3, 10, 15, 27 und 28 sowie - *nachgestellt* – drei Leerzeilen. 
 
 ## Aufgabe 
 1. Verschiebe die freistehende Positionsangaben (Zeilen 1,2,3,10,15,27,28) *in* die dazugehörigen nachstehenden Textblöcke.
 2. Verschiebe die nachgestellten Leerzeilen *in* die dazugehörigen vorstehenden Textblöcke.
-3. Dokumentiere/Überprüfe die vorgenommenen Änderungen (vorher/nachher).
+3. Dokumentiere/überprüfe die vorgenommenen Änderungen (vorher/nachher).
 
 Textgrundlage sind die unter Creative Commons Attribution, NonCommercial, ShareAlike 4.0 International (CC BY-NC-SA 4.0) Lizenz bereitgestellten van Gogh Letters. 
 

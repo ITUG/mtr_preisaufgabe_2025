@@ -1,4 +1,4 @@
-# Michael Trauth Gedächnispreis 2026
+# Michael Trauth Gedächnispreis 2025
 
 In einem digitalen Editionsvorhaben befinden sich die Positionsangaben `lb` (line begin), `pb` (page begin) oder `cb` (colum begin) teilweise *ausserhalb* der übergeordneten Blockeinheit (`ab`, `p`). 
 Zudem sind Leerzeilen (`<vg:whiteline/>`) ausserhalb der dadurch freigestellten Textblöcke positioniert.

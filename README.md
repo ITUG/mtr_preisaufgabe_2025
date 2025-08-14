@@ -54,6 +54,11 @@ Auch Teillösungen zu 1, 2 oder 3 sind willkommen !
 ## Quelle
 Textgrundlage sind die unter Creative Commons Attribution, NonCommercial, ShareAlike 4.0 International (CC BY-NC-SA 4.0) Lizenz bereitgestellten van Gogh Letters. 
 
+* [teiPublisher Demo](https://teipublisher.com/exist/apps/vangogh/index.html)
+
+* https://vangoghletters.org 
+
+
 ## Ziel
 ```xml
 <div type="original" xml:lang="nl">

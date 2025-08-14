@@ -41,8 +41,8 @@ Download als XML-Datei: https://raw.githubusercontent.com/eeditiones/vangogh/ref
 Download als TUSTEP-Datei [let001.tf](https://github.com/ITUG/mtr_preisaufgabe_2025/blob/main/let001.tf)
 
 ## Aufgabe 
-1. Verschiebe die freistehende Positionsangaben (Zeilen 1,2,3,10,15,27,28) *in* die dazugehörigen _nachstehenden_ Textblöcke.
-2. Verschiebe die nachgestellten Leerzeilen *in* die dazugehörigen _vorstehenden_ Textblöcke.
+1. Verschiebe die freistehende Positionsangaben (Zeilen 1,2,3,10,15,27,28) *in* die dazugehörigen <ins>nachstehenden</ins> Textblöcke.
+2. Verschiebe die nachgestellten Leerzeilen *in* die dazugehörigen <ins>vorstehenden</ins> Textblöcke.
 3. Dokumentiere/überprüfe die vorgenommenen Änderungen (vorher/nachher).
 
 Textgrundlage sind die unter Creative Commons Attribution, NonCommercial, ShareAlike 4.0 International (CC BY-NC-SA 4.0) Lizenz bereitgestellten van Gogh Letters. 

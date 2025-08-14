@@ -5,19 +5,6 @@ Zudem sind Leerzeilen (`<vg:whiteline/>`) *ausserhalb* der dadurch nach unten ab
 
 Im folgenden Beispiel befinden sich die meisten Zeilen- und Seitenanfänge *innerhalb* des Textblocks (`ab`), ausserhalb - *vorangestellt* – befinden sich jedoch die Zeilen 1, 2, 3, 10, 15, 27 und 28 sowie - *nachgestellt* – drei Leerzeilen. 
 
-## Aufgabe 
-1. Verschiebe die freistehende Positionsangaben (Zeilen 1,2,3,10,15,27,28) *in* die dazugehörigen nachstehenden Textblöcke.
-2. Verschiebe die nachgestellten Leerzeilen *in* die dazugehörigen vorstehenden Textblöcke.
-3. Dokumentiere/überprüfe die vorgenommenen Änderungen (vorher/nachher).
-
-Textgrundlage sind die unter Creative Commons Attribution, NonCommercial, ShareAlike 4.0 International (CC BY-NC-SA 4.0) Lizenz bereitgestellten van Gogh Letters. 
-
-Gearbeitet werden kann mit dem untenstehenden Textbeispiel oder einem oder mehreren oder allen Texten, die im van Gogh Repositiorum bereitgestellt werden: https://github.com/eeditiones/vangogh/tree/master/data
-
-Diese Aufgabe darf/soll/kann mit parametergesteuerten TUSTEP-Modulen, TUSCRIPT oder im Editor gelöst werden. 
-
-Auch Teillösungen zu 1, 2 oder 3 sind willkommen !
-
 ```xml
 <div type="original" xml:lang="nl">
 <pb f="1r" n="1" xml:id="pb-orig-1r-1" facs="#zone-pb-1r-1"/>
@@ -51,6 +38,18 @@ Quelle: https://github.com/eeditiones/vangogh/blob/master/data/let001.xml, Zeile
 
 Download: https://raw.githubusercontent.com/eeditiones/vangogh/refs/heads/master/data/let001.xml 
 
+## Aufgabe 
+1. Verschiebe die freistehende Positionsangaben (Zeilen 1,2,3,10,15,27,28) *in* die dazugehörigen nachstehenden Textblöcke.
+2. Verschiebe die nachgestellten Leerzeilen *in* die dazugehörigen vorstehenden Textblöcke.
+3. Dokumentiere/überprüfe die vorgenommenen Änderungen (vorher/nachher).
+
+Textgrundlage sind die unter Creative Commons Attribution, NonCommercial, ShareAlike 4.0 International (CC BY-NC-SA 4.0) Lizenz bereitgestellten van Gogh Letters. 
+
+Gearbeitet werden kann mit dem untenstehenden Textbeispiel oder einem oder mehreren oder allen Texten, die im van Gogh Repositiorum bereitgestellt werden: https://github.com/eeditiones/vangogh/tree/master/data
+
+Diese Aufgabe darf/soll/kann mit parametergesteuerten TUSTEP-Modulen, TUSCRIPT oder im Editor gelöst werden. 
+
+Auch Teillösungen zu 1, 2 oder 3 sind willkommen !
 
 ## Ziel
 ```xml

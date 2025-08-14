@@ -17,6 +17,8 @@ Gearbeitet werden kann mit dem untenstehenden Textbeispiel oder einem oder mehre
 
 Diese Aufgabe darf/soll/kann mit parametergesteuerten TUSTEP-Modulen, TUSCRIPT oder im Editor gelöst werden. 
 
+Auch Teillösungen zu 1, 2 oder 3 sind willkommen !
+
 ```xml
 <div type="original" xml:lang="nl">
 <pb f="1r" n="1" xml:id="pb-orig-1r-1" facs="#zone-pb-1r-1"/>
@@ -68,9 +70,5 @@ Quelle: https://github.com/eeditiones/vangogh/blob/master/data/let001.xml, Zeile
 <ab><lb n="28" xml:id="l-28"/>Vincent<vg:whiteline/></ab>
 </div>
 ```
-
-
-
-
 
 ## Lösungen

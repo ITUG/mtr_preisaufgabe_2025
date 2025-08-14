@@ -38,7 +38,7 @@ Quelle: https://github.com/eeditiones/vangogh/blob/master/data/let001.xml, Zeile
 
 Download als XML-Datei: https://raw.githubusercontent.com/eeditiones/vangogh/refs/heads/master/data/let001.xml 
 
-Download als TUSTEP-Datei [let103.tf](https://github.com/ITUG/mtr_preisaufgabe_2025/blob/main/let001.tf)
+Download als TUSTEP-Datei [let001.tf](https://github.com/ITUG/mtr_preisaufgabe_2025/blob/main/let001.tf)
 
 ## Aufgabe 
 1. Verschiebe die freistehende Positionsangaben (Zeilen 1,2,3,10,15,27,28) *in* die dazugehörigen nachstehenden Textblöcke.

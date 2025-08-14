@@ -45,13 +45,14 @@ Download als TUSTEP-Datei [let001.tf](https://github.com/ITUG/mtr_preisaufgabe_2
 2. Verschiebe die nachgestellten Leerzeilen *in* die dazugehörigen <ins>vorstehenden</ins> Textblöcke.
 3. Dokumentiere/überprüfe die vorgenommenen Änderungen (vorher/nachher).
 
-Textgrundlage sind die unter Creative Commons Attribution, NonCommercial, ShareAlike 4.0 International (CC BY-NC-SA 4.0) Lizenz bereitgestellten van Gogh Letters. 
-
 Gearbeitet werden kann mit dem untenstehenden Textbeispiel oder einem oder mehreren oder allen Texten, die im van Gogh Repositiorum bereitgestellt werden: https://github.com/eeditiones/vangogh/tree/master/data
 
 Diese Aufgabe darf/soll/kann mit parametergesteuerten TUSTEP-Modulen, TUSCRIPT oder im Editor gelöst werden. 
 
 Auch Teillösungen zu 1, 2 oder 3 sind willkommen !
+
+## Quelle
+Textgrundlage sind die unter Creative Commons Attribution, NonCommercial, ShareAlike 4.0 International (CC BY-NC-SA 4.0) Lizenz bereitgestellten van Gogh Letters. 
 
 ## Ziel
 ```xml

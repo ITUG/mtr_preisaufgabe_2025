@@ -155,4 +155,9 @@ xx    1   ~#\[2019\]~#\[92\]~
 
 ```
 
+### Christian Sonder
+
+Die Lösung von Christian Sonder liegt im Unterverzeichnis [mt_preis_cs](https://github.com/ITUG/mtr_preisaufgabe_2025/tree/main/mt_preis_cs)
+Auszuführen sind die dort abgelegten `*.pr` Dateien, z.B. mit `#tue,preisaufgabe.pr`
+### Thomas Kollatz (ausser Konkurrenz)
 

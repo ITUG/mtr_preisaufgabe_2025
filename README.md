@@ -139,7 +139,8 @@ xx    1   ~#\[2019\]~#\[92\]~
 
 #-        Kontrolle durch Vergleich mit vg_ziel, der Zieldatei von TK, mit Ergebnis im Ablaufprotokoll
 
-
+#ANMELDE,
+ lesen = vg_ziel
 
 #VERGLEICHE,
  versiona = vg_ziel,

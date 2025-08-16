@@ -159,5 +159,68 @@ xx    1   ~#\[2019\]~#\[92\]~
 
 Die Lösung von Christian Sonder liegt im Unterverzeichnis [mt_preis_cs](https://github.com/ITUG/mtr_preisaufgabe_2025/tree/main/mt_preis_cs)
 Auszuführen sind die dort abgelegten `*.pr` Dateien, z.B. mit `#tue,preisaufgabe.pr`
+
 ### Thomas Kollatz (ausser Konkurrenz)
 
+```bash
+$$ MODE TUSCRIPT,{}
+url="https://raw.githubusercontent.com/eeditiones/vangogh/refs/heads/master/data/let001.xml"
+daten=REQUEST (url,"",status)
+daten=DECODE (daten,UTF8)
+datenalt=VALUE(daten)
+
+-- Aufgabe 2: whitelines identifizieren (lesen)
+DICT ab_whiteline CREATE
+ACCESS q: READ/VARIABLE/STREAM/RECORDS daten s,a+t+e,typ,stack,stack_num
+ LOOP/999999
+  READ/EXIT q
+  IF (e.hn."ab") DICT ab_whiteline ADD stack_num,num
+  IF (t.hn."vg:whiteline") THEN
+    DICT ab_whiteline RECALL key,num
+    DICT ab_whiteline UPDATE key,num,cnt,t
+  ENDIF
+ ENDLOOP
+ENDACCESS q
+ERROR/STOP CREATE ("ab_whiteline.tf",SEQ-o,-std-)
+DICT ab_whiteline UNLOAD/FILE "ab_whiteline.tf"," "
+
+-- Aufgabe 1 und 2 (schreiben)
+move=""
+ACCESS q: READ/VARIABLE/STREAM/RECORDS daten s,a+t+e,typ,stack,stack_num
+ACCESS z: WRITE/VARIABLE/ERASE/STREAM  datenneu s,a+t+e
+ LOOP/999999
+  READ/EXIT q
+  -- Aufgabe1: pb,lb ggbf. in nachfolgendes ab holen
+  IF (t.hn."pb","lb"&&stack.nc." <ab> ") THEN
+   move=CONCAT (move,t)
+   CYCLE
+  ENDIF
+  IF (a.hn."ab"&&move!="") THEN
+   a=CONCAT (a,move)
+   move=""
+  ENDIF
+  -- Aufgabe2: vg:whiteline ggbf. in vorangehendes ab holen
+  IF (e.hn."ab") THEN
+    DICT ab_whiteline LOOKUP stack_num,num,cnt,value1
+    IF (value1!="") e=CONCAT (value1,e)
+  ENDIF
+  IF (t.hn."vg:whiteline") CYCLE
+  WRITE z
+ ENDLOOP
+ENDACCESS q
+ENDACCESS z
+
+-- Aufgabe 3: Dokumentiere die Veränderungen
+-- 1. #vergleiche
+ERROR/STOP CREATE ("vglalt.tf",seq-o,-std-)
+ERROR/STOP CREATE ("vglneu.tf",seq-o,-std-)
+FILE/ERASE "vglalt.tf" = datenalt
+FILE/ERASE "vglneu.tf" = datenneu
+EXECUTE #ve,vglalt.tf,vglneu.tf,w,,,,+
+-- 2. Compare Files (oxygen)
+FETCH dsk = TUSTEP_DSK
+path2source=ADJUST_PATH (dsk,"source.xml")
+path2target=ADJUST_PATH (dsk,"target.xml")
+ERROR/STOP WRITE (path2source,datenalt,UTF8,0,FDF)
+ERROR/STOP WRITE (path2target,datenneu,UTF8,0,FDF)
+```

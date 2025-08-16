@@ -81,5 +81,77 @@ Textgrundlage sind die unter Creative Commons Attribution, NonCommercial, ShareA
 ```
 
 ## Lösungen
-to be done 
+### Elke Zinsmeister
+```bash
+#-        Routine für Preisfrage, Tustep-Workshop 2025, Elke Zinsmeister
+
+#-        Anlegen der Ziel- und einer Hilfsdatei
+#DATEI,
+ name = ziel,
+ typ = seq-ap
+
+#DATEI,
+ name = vg1,
+ fragen = -
+
+#KOPIERE,
+ quelle = let001.tf,
+ ziel = vg1,
+ loeschen = +,
+ parameter = *
+par       {}
+
+          - Zeichengruppe mit den Zeichen, die in <lb> vorkommen können
+>tg       ~ ~{\a}~{&0}~:~=~"~-~/~
+
+          - neue Einteilung des Texts: Sätze beginnen bei <div und </ab
+aa        ~<div~</ab~
+
+          - <ab> wird vor <lb> gezogen
+xx    1   ~<lb{00}{Z:tg}>{|} <ab>~{=2=}{=1=}~
+
+          - <ab rend="indent"> wird vor <lb> gezogen
+xx    2   ~<lb{00}{Z:tg}>{|} <ab rend="indent">~{=2=}{=1=}~
+
+          - <ab> wird vor <pb> gezogen
+xx    3   ~<pb */> {|} <ab>~{=2=}{=1=}~
+
+          - <vg:whiteline/> wird vor </ab> gezogen
+xx    4   ~</ab> {|}<vg:whiteline/>~{=2=}{=1=}~
+*eof
+
+
+#KOPIERE,
+ quelle = vg1,
+ ziel = ziel,
+ modus = +,
+ loeschen = +,
+ parameter = *
+par       {}
+          - neue Einteilung des Texts: Sätze beginnen bei <div und </ab und </div
+aa        ~<div>~<ab~</div~
+za        ~<div>~<ab~</div~
+
+          - Autauschen der Codierung für Apostroph
+xx    1   ~#\[2019\]~#\[92\]~
+*eof
+
+
+#-        Kontrolle durch Vergleich mit vg_ziel, der Zieldatei von TK, mit Ergebnis im Ablaufprotokoll
+
+
+
+#VERGLEICHE,
+ versiona = vg_ziel,
+ versionb = ziel,
+ protokoll = +
+
+#-        - Kontrolle durch Dateienvergleich in oxygen:
+#-        - Dateien vg_ziel und ziel über ez,(+1,-1) in gleichnamige in oxygen neu erstellte
+#-        - XML-Dateien kopiert. Versuch, Dateien mit "Dateien vergleichen" zu vergleichen scheitert,
+#-        - Fehlermeldung: "Fehler gefunden in ...\vg_ziel.xml: Cannot parse document.
+#-        - Vergleiche mit Syntax-bewusst"
+
+``
+
 
